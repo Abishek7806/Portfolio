@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Abishek 👋</h2>
+            <p>B.Tech Information Technology Student</p>
+            <button onclick="fun()">Download CV</button> 
+        </div>
+
+        <div class="hero-image">
+            <img src="1.jpeg" alt="Profile Photo">
+        </div>
+    </section>
+
+   
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+            <div class="skill">Python</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Java Script</div>
+        </div>
+    </section>
+   
+<section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3 style="color:blueviolet">Student Registration Form</h3>
+            <p style="color:blueviolet">Created a student registration form with proper table alignment and input validation design.</p>
+            <a href="#" onclick="forme()">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3 style="color:blueviolet">Portfolio Website</h3>
+            <p style="color:blueviolet">Built a personal portfolio website to showcase skills and academic projects.</p>
+            <a href="#" onclick="port()" target="_blank">View Project</a>
+        </div>
+
+          <div class="project-card">
+            <h3 style="color:blueviolet">Hotel Booking Website</h3>
+            <p style="color:blueviolet">Designed a responsive hotel website using HTML and CSS with booking form and gallery section.</p>
+            <a href="#">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" onclick="sen()">Send Message</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
+<script>
+    function fun(){
+        window.open("Resume.pdf", "_blank");
+    }
+    function sen(){
+        alert("Message Sent Successfully");
+    }
+    function forme(){
+        window.open("form.html", "_blank");
+    }
+    function port(){
+        window.open("port1.html", "_blank");
+    }
+</script>
